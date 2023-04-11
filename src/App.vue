@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import Header from './components/layouts/Header'
+import Header from './components/Layouts/Header'
 import Main from './components/Section/Main'
 
 export default {

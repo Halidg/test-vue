@@ -30,7 +30,7 @@
 
 <script>
 import Logo from '../Ui/Logo.vue'
-import Navigation from '../navigation/Navigation'
+import Navigation from '../Navigation/Navigation'
 import BurgerMenu from '../Ui/BurgerMenu.vue'
 import Burger from '../Ui/Burger.vue'
 

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Navigation from '../navigation/Navigation'
+import Navigation from '../Navigation/Navigation'
 
 export default {
   components: {
