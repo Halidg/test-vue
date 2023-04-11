@@ -19,6 +19,10 @@
       </div>
          <BurgerMenu :show="showing">
            <Navigation :style="'mobile'"/> 
+           <template v-slot:location>
+              <img class="header__location-img" src="../../assets/icons/location.svg" alt="location">
+              <span class="header__location-info">Москва и область</span>   
+           </template>
          </BurgerMenu>
     </div>
   </header>  
@@ -62,10 +66,10 @@ export default {
   z-index: 1000;
   background: #1F2229;
   transition: 0.5s;
-  padding: 19px 0;
+  padding: 10px 0;
 
-  @include phones() {
-    padding: 5px 0;                 
+  @include desktop() {
+    padding: 14px 0;                 
   }
   
   &__content {
@@ -89,7 +93,7 @@ export default {
     }
 
     &-img {
-      margin-right: 13px;
+      margin-right: 14px;
     }
 
     &-info {
@@ -113,7 +117,7 @@ export default {
     }
 
     &-img {
-      margin-left: 47px;
+      margin-left: 39px;
     }
 
     &-notification {

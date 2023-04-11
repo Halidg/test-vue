@@ -28,8 +28,8 @@ export default {
 @import "@/styles/mixins.scss";
 .nav {
   display: flex;
-  margin-top: 10px;
   position: relative;
+  gap: 18px;
 
   @include desktop() {
     display: none;           
@@ -38,6 +38,8 @@ export default {
   &__mobile {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
   }
 }
 </style>

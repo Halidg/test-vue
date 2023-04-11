@@ -10,8 +10,10 @@ export default {
 <style lang="scss" scoped>
  @import "@/styles/mixins.scss";
 .logo {
+  width: 59px;
+
   @include phones() {
-    max-width: 140px;
+    max-width: 48px;
   }
 }
 </style>

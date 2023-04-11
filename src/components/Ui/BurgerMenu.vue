@@ -1,7 +1,10 @@
 <template>
   <div class="menu" :class="{'menu_show': show}">
-     <slot />
-  </div>    
+    <slot />
+    <div class="menu__location" :class="{'menu_show': show}">
+      <slot name="location" />
+    </div>  
+  </div>
 </template>
 
 <script>
@@ -24,14 +27,12 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 55px 15px;
-  transition-duration: 500ms;
+  transition-duration: 300ms;
 
-  @include desktop() {
-    margin-top: 10px;
-  }
-
-  @include phones() {
-    margin-top: 0px;
+  &__location {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
   }
 
   &_show {
