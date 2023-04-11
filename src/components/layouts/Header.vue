@@ -6,11 +6,11 @@
           <Logo />
         </div>
         <div class="header__location">
-          <img class="header__location-img" src="../../assets/icons/location.svg" alt="location">
+          <img class="header__location-img" src="@/assets/icons/location.svg" alt="location">
           <span class="header__location-info">Москва и область</span>   
         </div>
         <div class="header__bell">
-          <img class="header__bell-img" src="../../assets/icons/Notification-Bell.svg" alt="Notification">
+          <img class="header__bell-img" src="@/assets/icons/Notification-Bell.svg" alt="Notification">
           <span class="header__bell-notification"></span>
         </div>
         <div class="header__burger">
@@ -20,7 +20,7 @@
          <BurgerMenu :show="showing">
            <Navigation :style="'mobile'"/> 
            <template v-slot:location>
-              <img class="header__location-img" src="../../assets/icons/location.svg" alt="location">
+              <img class="header__location-img" src="@/assets/icons/location.svg" alt="location">
               <span class="header__location-info">Москва и область</span>   
            </template>
          </BurgerMenu>
